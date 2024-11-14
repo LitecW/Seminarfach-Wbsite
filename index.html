@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulhof Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Schulhof Challenge</h1>
+        <p>Motivierende Sport-Challenges für Schüler der Klassen 5 bis 8</p>
+    </header>
+
+    <section id="challenge-videos">
+        <h2>Challenge Videos</h2>
+        <div class="video-grid">
+            <!-- Platzhalter für die 16 Videos -->
+            <div class="video-placeholder">Video 1</div>
+            <div class="video-placeholder">Video 2</div>
+            <!-- Weitere Video-Platzhalter, wie zuvor beschrieben -->
+        </div>
+    </section>
+
+    <section id="ranking">
+        <h2>Rangliste</h2>
+        <p>Melde dich an oder registriere dich, um an den Ranglisten der Challenges teilzunehmen!</p>
+        <button onclick="toggleForm('login')">Anmelden</button>
+        <button onclick="toggleForm('register')">Registrieren</button>
+
+        <!-- Login-Formular -->
+        <div id="login-form" style="display: none;">
+            <h3>Login</h3>
+            <label for="login-username">Benutzername:</label>
+            <input type="text" id="login-username" placeholder="Benutzername">
+            <label for="login-password">Passwort:</label>
+            <input type="password" id="login-password" placeholder="Passwort">
+            <button onclick="login()">Anmelden</button>
+        </div>
+
+        <!-- Registrierungs-Formular -->
+        <div id="register-form" style="display: none;">
+            <h3>Registrierung</h3>
+            <label for="register-username">Benutzername:</label>
+            <input type="text" id="register-username" placeholder="Benutzername">
+            <label for="register-password">Passwort:</label>
+            <input type="password" id="register-password" placeholder="Passwort">
+            <button onclick="register()">Registrieren</button>
+        </div>
+
+        <div id="ranking-list">
+            <h3>Top 3 pro Challenge</h3>
+            <p>Die Ranglisten werden hier angezeigt, sobald Ergebnisse vorliegen.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Seminarfachprojekt 2023 – Entwickelt, um Schüler in Bewegung zu bringen!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
